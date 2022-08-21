@@ -1,16 +1,3 @@
-/* JS Document */
-
-/******************************
-
-[Table of Contents]
-
-1. Vars and Inits
-2. Set Header
-3. Init Menu
-
-
-******************************/
-
 $(document).ready(function()
 {
 	"use strict";

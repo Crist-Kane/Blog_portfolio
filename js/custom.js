@@ -97,11 +97,6 @@ $(document).ready(function()
 		menuActive = false;
 	}
 
-	/* 
-
-	4. Init Loaders
-
-	*/
 
 	function initLoaders()
 	{
@@ -124,8 +119,7 @@ $(document).ready(function()
 		    		var bar = new ProgressBar.Circle(loader,
 					{
 						color: '#8583e1',
-						// This has to be the same size as the maximum width to
-						// prevent clipping
+
 						strokeWidth: 1,
 						trailWidth: 20,
 						trailColor: '#e5e6e8',
@@ -137,7 +131,6 @@ $(document).ready(function()
 						},
 						from:{ color: '#8583e1', width: 1 },
 						to: { color: '#8583e1', width: 1 },
-						// Set default step function for all animate calls
 						step: function(state, circle)
 						{
 							circle.path.setAttribute('stroke', state.color);
@@ -160,7 +153,7 @@ $(document).ready(function()
 					bar.text.style.color = "#100f3a";
 
 
-					bar.animate(endValue);  // Number from 0.0 to 1.0
+					bar.animate(endValue);
 		    	})
 			    .addTo(ctrl);
 			});
